@@ -1,12 +1,16 @@
-import ImageUploader from "./components/ImageUploader";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Contacto from "./pages/Contacto";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
-    <main style={{ padding: 24, fontFamily: "system-ui" }}>
-      <h1>TP2 - File API</h1>
-      <ImageUploader />
-    </main>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contacto" element={<Contacto />} />
+      </Routes>
+    </>
   );
 }
-
-export default App;
