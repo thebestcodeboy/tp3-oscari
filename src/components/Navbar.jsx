@@ -10,6 +10,7 @@ export default function Navbar() {
   return (
     <nav style={{ display: "flex", gap: 12, padding: 16, borderBottom: "1px solid #ddd" }}>
       <NavLink to="/" style={linkStyle}>Inicio</NavLink>
+      <NavLink to="/servicios" style={linkStyle}>Servicios</NavLink>
       <NavLink to="/contacto" style={linkStyle}>Contacto</NavLink>
     </nav>
   );
